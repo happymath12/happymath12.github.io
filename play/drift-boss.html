@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Credit for javascript and css files:  https://github.com/PetoKrisa/frutiger-aero-css -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Classroom</title>
+    <link rel="stylesheet" href="../frutiger-aero.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body class="bg-green bg-animate">
+    <div id="f-container">
+        <div id="f-navbar">
+            <a href="../index.html">Home</a>
+            <a href="#" class="active">Drift Boss</a>
+        </div>
+        <div class="f-content">
+            <h1>Play Drift Boss</h1>
+            <iframe id="game-frame" src="https://shragsir.github.io/games/html5/driftboss/index.html" allowfullscreen></iframe>
+            <button class="fullscreen-btn" onclick="document.getElementById('game-frame').requestFullscreen();">Play Fullscreen</button>
+        </div>
+    </div>
+    
+    <script src="../frutiger-aero.js"></script>
+</body>
+</html>
