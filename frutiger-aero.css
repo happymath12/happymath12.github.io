@@ -131,8 +131,8 @@ h1,h2,h3,h4,h5,h6{
 /* Keep the game thumbnails glossy and interactive. */
 img{
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.92);
     border-radius: 16px;
@@ -151,14 +151,43 @@ img{
 }
 
 .img-group a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    box-sizing: border-box;
+    padding: 8px 8px 12px;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 18px;
+    color: #064f9e;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(180deg, rgba(235, 250, 255, 0.9) 0%, rgba(137, 210, 255, 0.8) 100%);
+    box-shadow:
+        0 2px 0 rgba(255, 255, 255, 0.9) inset,
+        0 8px 16px rgba(0, 78, 130, 0.25);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.img-group a img{
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .img-group a:hover img{
-    transform: translateY(-6px) scale(1.035) rotate(-1deg);
+    transform: scale(1.035) rotate(-1deg);
     filter: saturate(1.15) brightness(1.06);
     box-shadow:
         0 3px 0 rgba(255, 255, 255, 0.9) inset,
+        0 13px 20px rgba(0, 79, 130, 0.38);
+}
+
+.img-group a:hover{
+    transform: translateY(-6px);
+    box-shadow:
+        0 2px 0 rgba(255, 255, 255, 0.9) inset,
         0 13px 20px rgba(0, 79, 130, 0.38);
 }
 
@@ -194,6 +223,6 @@ iframe{
     text-align: center;
 }
 
-#bg-audio{
+.bg-audio{
     display: none;
 }

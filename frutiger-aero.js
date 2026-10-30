@@ -57,8 +57,4 @@ class Bubble{
 for(let i = 0; i < 10; i++){
     x = new Bubble(i);
     x.loop();
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 81ac526 (Initial Commit)
